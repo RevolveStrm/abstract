@@ -1,0 +1,246 @@
+@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-primary: #fff;
+  --text-secondary: #000000;
+  --text-accent: #4C5FD5;
+  --bg-primary: #000000;
+  --bg-secondary: #dadbf1;
+  --bg-accent: #DADBF1;
+
+  font-family: 'GT America Trial', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  height: 80px;
+  padding: 0 100px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.header__container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 20%;
+}
+
+.header__divider {
+  height: 1.5rem;
+  border: 1px solid var(--text-primary);
+  border-radius: 10px;
+}
+
+.header__logo-wrapper a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.header__logo-wrapper a svg {
+  width: 128px;
+  height: auto;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__button {
+  border: 1px solid var(--text-primary);
+  border-radius: 5px;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 8px 30px;
+}
+
+.header__button:nth-child(2) {
+  border: none;
+  background-color: var(--text-accent);
+}
+
+.header__button a:visited {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.search-section {
+  height: 400px;
+  background-color: var(--bg-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__container {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.search__container {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.search__input-wrapper {
+  position: relative;
+  width: 600px;
+  margin-top: 40px;
+}
+
+.search__input-wrapper input {
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.search__input-wrapper svg {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+.cards-section {
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card__item {
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card__item-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__item img {
+  width: 96px;
+}
+
+.card__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card__item-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card__item-info p {
+  margin: 5px 0 10px;
+  color: #555;
+}
+
+.card__item-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-accent);
+  transition: color 0.2s ease;
+}
+
+.card__item-info a:hover {
+  color: #0056b3;
+}
+
+footer {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-weight: 300;
+}
+
+.footer__links {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__links-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links h2:not(.contact__info h2) {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.footer__links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.contact__info h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.abstract-logo-footer {
+  width: 192px;
+  margin-bottom: 10px;
+}
